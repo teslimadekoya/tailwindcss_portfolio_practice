@@ -7,12 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --font-weight-extralight: 200;
-    --font-weight-light: 300;
     --font-weight-normal: 400;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -187,14 +187,26 @@
   .mx-\[64px\] {
     margin-inline: 64px;
   }
+  .mt-\[21\] {
+    margin-top: 21;
+  }
   .mt-\[204px\] {
     margin-top: 204px;
+  }
+  .mt-\[218px\] {
+    margin-top: 218px;
+  }
+  .mt-\[219\] {
+    margin-top: 219;
   }
   .mb-\[2px\] {
     margin-bottom: 2px;
   }
   .mb-\[44px\] {
     margin-bottom: 44px;
+  }
+  .mb-\[118px\] {
+    margin-bottom: 118px;
   }
   .block {
     display: block;
@@ -216,9 +228,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -244,6 +253,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-\[8px\] {
     gap: 8px;
   }
@@ -256,14 +268,17 @@
   .bg-\[\#FE5F55\] {
     background-color: #FE5F55;
   }
-  .bg-\[\#fff\] {
-    background-color: #fff;
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
   }
   .bg-black\/90 {
     background-color: color-mix(in srgb, #000 90%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
     }
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .object-cover {
     object-fit: cover;
@@ -286,8 +301,14 @@
   .text-\[64px\] {
     font-size: 64px;
   }
+  .text-\[80px\] {
+    font-size: 80px;
+  }
   .text-\[120px\] {
     font-size: 120px;
+  }
+  .text-\[900px\] {
+    font-size: 900px;
   }
   .leading-\[110\%\] {
     --tw-leading: 110%;
@@ -303,6 +324,9 @@
   }
   .text-\[\#FE5F55\] {
     color: #FE5F55;
+  }
+  .text-amber-900 {
+    color: var(--color-amber-900);
   }
   .text-white {
     color: var(--color-white);
