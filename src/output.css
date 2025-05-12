@@ -614,11 +614,6 @@
       font-size: 14px;
     }
   }
-  .sm\:text-\[32px\] {
-    @media (width >= 40rem) {
-      font-size: 32px;
-    }
-  }
   .md\:text-\[40px\] {
     @media (width >= 48rem) {
       font-size: 40px;
